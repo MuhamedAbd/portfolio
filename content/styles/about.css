@@ -1,0 +1,153 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+.logo{
+    text-decoration: none;
+    color: #2E2C6A;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100%;
+    margin: 5px;
+}
+.nav a{
+    color: #2E2C6A;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 20px ;
+}
+.nav a:hover{
+    color: #5258d1;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas:
+    "about skills"
+    "tech lang"
+    ;
+    padding: 15px 30px;
+    background-image: url(/content/Photos/vecteezy_abstract-blue-background-simple-design-for-your-website_6852804.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.about{
+    grid-area: about;
+    color: #D4AF37;
+    font-size: 18px;        
+    line-height: 1.6;       
+    margin: 20px 0;        
+    padding: 10px;                   
+    font-family: 'Arial', sans-serif;
+}
+.skills{
+    grid-area: skills;
+    color: #D4AF37;
+    font-size: 18px;        
+    line-height: 1.6;       
+    margin: 20px 0;        
+    padding: 10px;                   
+    font-family: 'Arial', sans-serif;
+}
+.tech{
+    grid-area: tech;
+    color: #D4AF37;
+}
+.lang{
+    grid-area: lang;
+    color: #D4AF37;
+}
+.lang {
+    margin: 20px 0;        
+    padding: 10px;                   
+    font-family: 'Arial', sans-serif;
+}
+.lang img{
+    height: 40px ;
+    width: 40px;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "about"
+            "skills"
+            "tech"
+            "lang";
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .nav a {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 1.2em;
+    }
+
+    .main {
+        padding: 10px 15px;
+    }
+
+    .about, .skills, .tech, .lang {
+        font-size: 16px;
+    }
+
+    .lang img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav a {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .main {
+        padding: 5px 10px;
+    }
+
+    .about, .skills, .tech, .lang {
+        font-size: 14px;
+    }
+
+    .lang img {
+        height: 25px;
+        width: 25px;
+    }
+}
