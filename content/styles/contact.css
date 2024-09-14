@@ -46,4 +46,89 @@ header{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 80vw ;
+    height: 60vh;
+    color: #ffffff;
+    background-image: url(/content/Photos/stock-vector-abstract-white-and-gray-color-modern-design-stripes-background-with-geometric-round-shape-vector-2275076235.jpg);
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "text input";
+
+}
+.input{
+    grid-area: input;
+}
+.text{
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.text h2{
+    color: #2E2C6A;
+}
+.text p{
+    color: #2E2C6A;
+}
+.input{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.name{
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.email{
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.message{
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 500px;
+    height: 100px ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.btn{
+    background-color: #007bff; /* Primary color */
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.text img{
+    width: 150px;
+    height: 150px;
+    margin: 60px ;
+}
+.input input{
+    color: #2E2C6A;
 }
