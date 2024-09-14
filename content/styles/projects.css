@@ -48,4 +48,19 @@ header{
     display: grid;
     grid-template-rows: 4fr 4fr ;
     grid-template-columns: 4fr 4fr;
+    grid-template-areas: 
+    "prj1 prj2"
+    "prj3 prj4";
+}
+.prj1{
+    grid-area: prj1;
+}
+.prj2{
+    grid-area: prj2;
+}
+.prj3{
+    grid-area: prj3;
+}
+.prj4{
+    grid-area: prj4;
 }
