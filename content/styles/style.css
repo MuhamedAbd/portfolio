@@ -5,13 +5,9 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
-container{
-    margin: 0;
-    padding: 0;
-}
 header{
-    background-color: antiquewhite;
     width: 100%;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,7 +15,7 @@ header{
 }
 .logo{
     text-decoration: none;
-    color: blue;
+    color: #2E2C6A;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.5em;
@@ -33,12 +29,70 @@ header{
     margin: 5px;
 }
 .nav a{
-    color: blue;
+    color: #2E2C6A;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 600;
     padding: 20px ;
 }
 .nav a:hover{
-    color: aqua;
+    color: #5258d1;
+}
+section{
+    padding: 50px 150px ;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-image: url(/content/Photos/vecteezy_abstract-blue-background-simple-design-for-your-website_6852804.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.profiel__pic{
+    width: 250px;
+    height: 250px;
+    -webkit-box-shadow: -14px 11px 26.5px -5.5px #000000;
+    -moz-box-shadow: -14px 11px 26.5px -5.5px #000000;
+    box-shadow: -14px 11px 26.5px -5.5px #000000;
+    border-radius: 15%;
+
+}
+.profiel__pic img{
+    width: 250px;
+    height: 250px;
+    border-radius: 0%;
+}
+.disc{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.disc h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.disc h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    font-weight: 600;
+}
+.disc p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.socialmedia img{
+    width: 25px;
+    height: 25px;
+}
+.socialmedia{
+    padding: 25px 25px;
+    display: flex;
+    justify-content: space-between;
 }
