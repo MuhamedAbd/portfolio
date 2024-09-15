@@ -132,3 +132,29 @@ header{
 .input input{
     color: #2E2C6A;
 }
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    .nav a {
+        padding: 10px;
+        font-size: 1em;
+    }
+    .box {
+        width: 90vw;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "text"
+        "input";
+    }
+    .name, .email, .message {
+        max-width: 100%;
+    }
+    .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+}

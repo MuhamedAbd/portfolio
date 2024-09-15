@@ -106,68 +106,93 @@ header{
 }
 .prj1 button{
     display: inline-block;
-  padding: 8px 16px; /* Adjust padding for size */
-  font-size: 14px;   /* Small font size for a small button */
-  font-family: 'Arial', sans-serif; /* Modern font */
-  font-weight: 500;  /* Slightly bold text */
-  text-align: center;
-  text-decoration: none;
-  color: #fff;       /* White text color */
-  background-color: #007bff; /* Primary button color */
-  border: none;
-  border-radius: 4px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 8px 16px; 
+    font-size: 14px;  
+    font-family: 'Arial', sans-serif; 
+    font-weight: 500;  
+    text-align: center;
+    text-decoration: none;
+    color: #fff;      
+    background-color: #007bff; 
+    border: none;
+    border-radius: 4px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .prj2 button{
-display: inline-block;
-  padding: 8px 16px; /* Adjust padding for size */
-  font-size: 14px;   /* Small font size for a small button */
-  font-family: 'Arial', sans-serif; /* Modern font */
-  font-weight: 500;  /* Slightly bold text */
-  text-align: center;
-  text-decoration: none;
-  color: #fff;       /* White text color */
-  background-color: #007bff; /* Primary button color */
-  border: none;
-  border-radius: 4px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
+    display: inline-block;
+    padding: 8px 16px; 
+    font-size: 14px;   
+    font-family: 'Arial', sans-serif; 
+    font-weight: 500;  
+    text-align: center;
+    text-decoration: none;
+    color: #fff;       
+    background-color: #007bff; 
+    border: none;
+    border-radius: 4px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    }
 .prj3 button{
-display: inline-block;
-  padding: 8px 16px; /* Adjust padding for size */
-  font-size: 14px;   /* Small font size for a small button */
-  font-family: 'Arial', sans-serif; /* Modern font */
-  font-weight: 500;  /* Slightly bold text */
-  text-align: center;
-  text-decoration: none;
-  color: #fff;       /* White text color */
-  background-color: #007bff; /* Primary button color */
-  border: none;
-  border-radius: 4px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    padding: 8px 16px; 
+    font-size: 14px;   
+    font-family: 'Arial', sans-serif; 
+    font-weight: 500;  
+    text-align: center;
+    text-decoration: none;
+    color: #fff;     
+    background-color: #007bff; 
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .prj4 button{
-display: inline-block;
-  padding: 8px 16px; /* Adjust padding for size */
-  font-size: 14px;   /* Small font size for a small button */
-  font-family: 'Arial', sans-serif; /* Modern font */
-  font-weight: 500;  /* Slightly bold text */
-  text-align: center;
-  text-decoration: none;
-  color: #fff;       /* White text color */
-  background-color: #007bff; /* Primary button color */
-  border: none;
-  border-radius: 4px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    padding: 8px 16px; 
+    font-size: 14px;   
+    font-family: 'Arial', sans-serif; 
+    font-weight: 500;  
+    text-align: center;
+    text-decoration: none;
+    color: #fff;     
+    background-color: #007bff; 
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    .nav a {
+        padding: 10px;
+        font-size: 1em;
+    }
+    .main {
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+            "prj1"
+            "prj2"
+            "prj3"
+            "prj4";
+    }
+
+    button {
+        width: 50%; 
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
 
 
 
