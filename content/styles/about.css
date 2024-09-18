@@ -1,3 +1,4 @@
+
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -49,14 +50,13 @@ header{
     "tech lang"
     ;
     padding: 15px 30px;
-    background-image: url(../Photos/vecteezy_abstract-blue-background-simple-design-for-your-website_6852804.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 .about{
     grid-area: about;
-    color: #D4AF37;
+    color: #000000;
     font-size: 18px;        
     line-height: 1.6;       
     margin: 20px 0;        
@@ -65,7 +65,7 @@ header{
 }
 .skills{
     grid-area: skills;
-    color: #D4AF37;
+    color: #000000;
     font-size: 18px;        
     line-height: 1.6;       
     margin: 20px 0;        
@@ -74,11 +74,11 @@ header{
 }
 .tech{
     grid-area: tech;
-    color: #D4AF37;
+    color: #000000;
 }
 .lang{
     grid-area: lang;
-    color: #D4AF37;
+    color: #000000;
 }
 .lang {
     margin: 20px 0;        

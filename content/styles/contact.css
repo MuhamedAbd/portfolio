@@ -42,7 +42,6 @@ header{
     width: 100%;
     min-height: 100vh;
     display: flex;
-    background-image: url(../Photos/vecteezy_abstract-blue-background-simple-design-for-your-website_6852804.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -53,7 +52,7 @@ header{
     width: 80vw ;
     height: 60vh;
     color: #ffffff;
-    background-image: url(../Photos/stock-vector-abstract-white-and-gray-color-modern-design-stripes-background-with-geometric-round-shape-vector-2275076235.jpg);
+    background-image: url(../../content/Photos/stock-vector-abstract-white-and-gray-color-modern-design-stripes-background-with-geometric-round-shape-vector-2275076235.jpg);
     display: grid;
     grid-template-columns: 2fr 4fr;
     grid-template-rows: 1fr;
@@ -132,6 +131,7 @@ header{
 .input input{
     color: #2E2C6A;
 }
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
