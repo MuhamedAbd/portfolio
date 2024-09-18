@@ -45,25 +45,21 @@ section{
     width: 100%;
     min-height: 100vh;
     display: flex;
-    background-image: url(.././Photos/vecteezy_abstract-blue-background-simple-design-for-your-website_6852804.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
-
-
-.profiel__pic{
-    width: 250px;
-    height: 250px;
-    -webkit-box-shadow: -14px 11px 26.5px -5.5px #000000;
-    -moz-box-shadow: -14px 11px 26.5px -5.5px #000000;
-    box-shadow: -14px 11px 26.5px -5.5px #000000;
-    border-radius: 15%;
-
+.compin__div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
+
+
 .profiel__pic img{
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     border-radius: 0%;
 }
 .disc{
@@ -73,17 +69,17 @@ section{
     justify-content: center;
 }
 .disc h1{
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Courier New', Courier, monospace;
     font-size: 2.5em;
     font-weight: 700;
 }
 .disc h2{
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Courier New', Courier, monospace;
     font-size: 2em;
     font-weight: 600;
 }
 .disc p{
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Courier New', Courier, monospace;
     font-size: 1.5em;
     font-weight: 500;
 }
@@ -97,6 +93,34 @@ section{
     padding: 25px 25px;
     display: flex;
     justify-content: space-between;
+}
+body.dark-mode {
+    background-color: #181818;
+    color: #f0f0f0;
+    }
+header.dark-mode {
+    background-color: #333;
+}
+
+.nav a.dark-mode {
+    color: #f0f0f0;
+}
+
+  /* Dark Mode Button */
+button#dark__mode {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+  /* Button style when dark mode is active */
+body.dark-mode button#dark__mode {
+    background-color: #f0f0f0;
+    color: #333;
 }
 /* Responsive adjustments */
 @media (max-width: 1024px) {
@@ -122,6 +146,16 @@ section{
         justify-content: center;
         text-align: center;
         padding: 30px 50px;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    button#dark__mode {
+        font-size: smaller;
+        padding: 5px 10px;
     }
 .profiel__pic{
     width: 200px;
@@ -161,6 +195,14 @@ section{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    
+    .dark-mode-button {
+        font-size: 12px;
+        padding: 5px 8px;
+        margin-left: auto;
+
+    
     }
 }
 
@@ -208,4 +250,5 @@ section{
         width: 35px;
         height: 35px;
     }
+    
 }
