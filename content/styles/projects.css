@@ -179,9 +179,8 @@ header{
     transform: translate(-50%, -50%);
     background: white;
     z-index: 1000;
-    display: none;
+    display: none; 
 }
-
 
 @media (max-width: 768px) {
     header {
